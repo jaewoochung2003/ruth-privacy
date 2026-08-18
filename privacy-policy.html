@@ -80,7 +80,7 @@
 
     <h2>How your data is used</h2>
     <ul>
-      <li><strong>To provide the service</strong> — your journal content is sent to Anthropic's API (Claude) to generate Ruth's responses. This is the core function of the app.</li>
+      <li><strong>To provide the service</strong> — your journal content is sent to OpenAI's API to generate Ruth's responses, and your mood and reflection context are sent to Anthropic's API (Claude) to generate your daily devotional. This is the core function of the app.</li>
       <li><strong>To personalize your experience</strong> — Ruth builds a private memory of your journey so she can respond to you more personally over time.</li>
       <li><strong>To send reminders</strong> — if you enable daily reminders, we schedule a local notification on your device. No data leaves your device for this.</li>
     </ul>
@@ -88,7 +88,8 @@
     <h2>Third-party services</h2>
     <p>Ruth uses the following services to operate:</p>
     <ul>
-      <li><strong>Anthropic (Claude API)</strong> — processes your journal text and generates Ruth's responses. Subject to <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic's Privacy Policy</a>.</li>
+      <li><strong>OpenAI</strong> — processes your journal text to generate Ruth's responses. Subject to <a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI's Privacy Policy</a>. OpenAI does not use data submitted through its API to train its models.</li>
+      <li><strong>Anthropic (Claude API)</strong> — generates your daily devotional and classifies the mood you select. Subject to <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic's Privacy Policy</a>.</li>
       <li><strong>Supabase</strong> — securely stores your account, journal entries, and profile data. Subject to <a href="https://supabase.com/privacy" target="_blank">Supabase's Privacy Policy</a>.</li>
       <li><strong>RevenueCat</strong> — manages subscription billing and purchase restoration. Subject to <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's Privacy Policy</a>.</li>
       <li><strong>Apple</strong> — processes payments for Ruth+ subscriptions via Apple's App Store. Subject to <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</li>
@@ -98,7 +99,7 @@
     <p>
       All data is transmitted over HTTPS and stored with encryption at rest via Supabase.
       Your journal entries are associated with your account and are not accessible to other users.
-      Claude API calls are proxied through a secure server — your Anthropic API key is never stored on your device.
+      All AI API calls are proxied through a secure server — no API keys are stored on your device.
     </p>
 
     <h2>Data retention</h2>
@@ -135,7 +136,7 @@
     <div class="divider">· · ·</div>
 
     <footer>
-      Ruth Devotional · <a href="https://jaewoochung.github.io/ruth-privacy/privacy-policy.html">Privacy Policy</a>
+      Ruth Devotional · <a href="https://jaewoochung2003.github.io/ruth-privacy/privacy-policy.html">Privacy Policy</a>
     </footer>
   </div>
 </body>
